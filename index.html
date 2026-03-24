@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master Budgeting Study Guide - Module 10 Accounting. Covers production budgets, direct materials, direct labor, overhead, cash budgets, and more.">
+    <title>Module 10: Master Budgeting | Accounting Study Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Module 10: Master Budgeting</h1>
+            <p>Comprehensive study guide covering all budget types, formulas &amp; examples</p>
+        </header>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showModule('sequence')">🔗 Budget Sequence</button>
+            <button class="nav-tab" onclick="showModule('production')">🏭 Production</button>
+            <button class="nav-tab" onclick="showModule('materials')">📦 Materials</button>
+            <button class="nav-tab" onclick="showModule('labor')">👷 Labor</button>
+            <button class="nav-tab" onclick="showModule('overhead')">⚙️ Overhead</button>
+            <button class="nav-tab" onclick="showModule('selling')">💼 S&amp;A Expense</button>
+            <button class="nav-tab" onclick="showModule('cash-collections')">💵 Cash Collections</button>
+            <button class="nav-tab" onclick="showModule('cash-budget')">🏦 Cash Budget</button>
+            <button class="nav-tab" onclick="showModule('income')">📋 Income Stmt</button>
+            <button class="nav-tab" onclick="showModule('balance')">⚖️ Balance Sheet</button>
+            <button class="nav-tab" onclick="showModule('formulas')">📝 Quick Ref</button>
+        </div>
+
+        <!-- ===================== BUDGET SEQUENCE ===================== -->
+        <div id="sequence" class="module-content active">
+            <div class="card">
+                <h2><span class="emoji-icon">🔗</span> The Budgeting Sequence (Memorize This!)</h2>
+                <div class="key-point">
+                    <strong>⚠️ Key Concept:</strong> The sales forecast / sales budget is ALWAYS the starting point because everything else depends on how much you plan to sell.
+                </div>
+                <div class="flowchart">
+                    <div class="flow-step"><div class="number">1</div>Sales Budget</div>
+                    <div class="flow-step"><div class="number">2</div>Production Budget</div>
+                    <div class="flow-step"><div class="number">3</div>DM / DL / MOH</div>
+                    <div class="flow-step"><div class="number">4</div>S&amp;A Expense</div>
+                    <div class="flow-step"><div class="number">5</div>Cash Budget</div>
+                    <div class="flow-step"><div class="number">6</div>Income Stmt</div>
+                    <div class="flow-step"><div class="number">7</div>Balance Sheet</div>
+                </div>
+                <div class="life-example">
+                    <h4>🧠 Think of it like this:</h4>
+                    <p>You plan what to <strong>sell</strong> → figure out what to <strong>make</strong> → determine what <strong>resources</strong> you need → track the <strong>cash</strong> → summarize everything in <strong>financial statements</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== PRODUCTION BUDGET ===================== -->
+        <div id="production" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">🏭</span> Production Budget</h2>
+                <div class="formula-box">
+                    Budgeted unit sales<br>
+                    + Desired ending finished goods inventory<br>
+                    = Total needs<br>
+                    − Beginning finished goods inventory<br>
+                    <strong>= Required production in units</strong>
+                </div>
+
+                <h3>Example: Parwin Corporation (Q4)</h3>
+                <p>Plans to sell: 43,000 units | Begin inv: 18,000 | Desired ending inv: 19,000</p>
+                <div class="formula-box">
+                    Budgeted sales &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;43,000<br>
+                    + Desired ending inventory &nbsp;&nbsp;19,000<br>
+                    = Total needs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;62,000<br>
+                    − Beginning inventory &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(18,000)<br>
+                    <strong>= Required production &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44,000 units ✅</strong>
+                </div>
+
+                <h3>Example: Down Under Products (Q7)</h3>
+                <p>Ending inventory = 15% of FOLLOWING month's sales. Beginning inventory (March 31) = 13,200 units.</p>
+                <table class="comparison-table">
+                    <tr><th></th><th>April</th><th>May</th><th>June</th></tr>
+                    <tr><td>Budgeted unit sales</td><td>88,000</td><td>90,000</td><td>128,000</td></tr>
+                    <tr><td>+ Desired ending inv</td><td>13,500</td><td>19,200</td><td>14,850</td></tr>
+                    <tr><td>= Total needs</td><td>101,500</td><td>109,200</td><td>142,850</td></tr>
+                    <tr><td>− Beginning inventory</td><td>(13,200)</td><td>(13,500)</td><td>(19,200)</td></tr>
+                    <tr><td><strong>Required production</strong></td><td><strong>88,300</strong></td><td><strong>95,700</strong></td><td><strong>123,650</strong></td></tr>
+                </table>
+                <div class="life-example">
+                    <h4>📝 Ending Inventory Calculations:</h4>
+                    <p>April ending = 90,000 × 15% = 13,500<br>
+                    May ending = 128,000 × 15% = 19,200<br>
+                    June ending = 99,000 × 15% = 14,850</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== DIRECT MATERIALS ===================== -->
+        <div id="materials" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">📦</span> Direct Materials Budget</h2>
+                <div class="formula-box">
+                    Raw materials needed for production (units × material per unit)<br>
+                    + Desired ending raw materials inventory<br>
+                    = Total raw materials needed<br>
+                    − Beginning raw materials inventory<br>
+                    <strong>= Raw materials to be PURCHASED</strong>
+                </div>
+                <div class="key-point">
+                    <strong>⚠️ Key:</strong> Required purchases = Needs + Desired Ending − Beginning Inventory
+                </div>
+
+                <h3>Example: Mink Caress — Musk Oil (Q8)</h3>
+                <p>3 grams per bottle | $1.50/gram | Ending inv = 20% of NEXT quarter's production needs | Beginning inv = 36,000g</p>
+                <table class="comparison-table">
+                    <tr><th></th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th></tr>
+                    <tr><td>Production (bottles)</td><td>60,000</td><td>90,000</td><td>150,000</td><td>100,000</td></tr>
+                    <tr><td>× Grams per bottle</td><td>× 3</td><td>× 3</td><td>× 3</td><td>× 3</td></tr>
+                    <tr><td><strong>Materials needed</strong></td><td><strong>180,000</strong></td><td><strong>270,000</strong></td><td><strong>450,000</strong></td><td><strong>300,000</strong></td></tr>
+                    <tr><td>+ Desired ending inv</td><td>54,000</td><td>90,000</td><td>60,000</td><td>42,000</td></tr>
+                    <tr><td>= Total needs</td><td>234,000</td><td>360,000</td><td>510,000</td><td>342,000</td></tr>
+                    <tr><td>− Beginning inventory</td><td>(36,000)</td><td>(54,000)</td><td>(90,000)</td><td>(60,000)</td></tr>
+                    <tr><td><strong>Purchases (grams)</strong></td><td><strong>198,000</strong></td><td><strong>306,000</strong></td><td><strong>420,000</strong></td><td><strong>282,000</strong></td></tr>
+                    <tr><td>× Cost per gram</td><td>× $1.50</td><td>× $1.50</td><td>× $1.50</td><td>× $1.50</td></tr>
+                    <tr><td><strong>Cost of purchases</strong></td><td><strong>$297,000</strong></td><td><strong>$459,000</strong></td><td><strong>$630,000</strong></td><td><strong>$423,000</strong></td></tr>
+                </table>
+                <div class="life-example">
+                    <h4>📝 Ending Inventory Calculations:</h4>
+                    <p>Q1 ending = 270,000 × 20% = 54,000<br>
+                    Q2 ending = 450,000 × 20% = 90,000<br>
+                    Q3 ending = 300,000 × 20% = 60,000<br>
+                    Q4 ending = (70,000 × 3) × 20% = 42,000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== DIRECT LABOR ===================== -->
+        <div id="labor" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">👷</span> Direct Labor Budget</h2>
+                <div class="formula-box">
+                    Units to be produced<br>
+                    × Direct labor hours per unit<br>
+                    = Total direct labor hours needed<br>
+                    × Direct labor cost per hour<br>
+                    <strong>= Total direct labor cost</strong>
+                </div>
+
+                <h3>Example: Rordan Corporation (Q9)</h3>
+                <p>0.75 DL hours per unit | $14.00 per hour</p>
+                <table class="comparison-table">
+                    <tr><th></th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th></tr>
+                    <tr><td>Units to produce</td><td>9,800</td><td>7,500</td><td>7,900</td><td>10,200</td></tr>
+                    <tr><td>× DL hours/unit</td><td>× 0.75</td><td>× 0.75</td><td>× 0.75</td><td>× 0.75</td></tr>
+                    <tr><td><strong>Total DL hours</strong></td><td><strong>7,350</strong></td><td><strong>5,625</strong></td><td><strong>5,925</strong></td><td><strong>7,650</strong></td></tr>
+                    <tr><td>× Cost per hour</td><td>× $14.00</td><td>× $14.00</td><td>× $14.00</td><td>× $14.00</td></tr>
+                    <tr><td><strong>Total DL cost</strong></td><td><strong>$102,900</strong></td><td><strong>$78,750</strong></td><td><strong>$82,950</strong></td><td><strong>$107,100</strong></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- ===================== MANUFACTURING OVERHEAD ===================== -->
+        <div id="overhead" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">⚙️</span> Manufacturing Overhead Budget</h2>
+                <div class="formula-box">
+                    Budgeted direct labor hours × Variable MOH rate = Variable MOH<br>
+                    + Fixed manufacturing overhead = Total MOH<br>
+                    − Depreciation (noncash)<br>
+                    <strong>= Cash disbursements for MOH</strong>
+                </div>
+
+                <h3>Example: Yuvwell Corporation (Q10)</h3>
+                <p>Variable MOH rate: $7.00/DL hr | Fixed MOH: $88,000/qtr | Depreciation: $22,000/qtr</p>
+                <table class="comparison-table">
+                    <tr><th></th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th></tr>
+                    <tr><td>Budgeted DL hours</td><td>12,000</td><td>10,200</td><td>10,500</td><td>11,300</td></tr>
+                    <tr><td>× Variable MOH rate</td><td>× $7.00</td><td>× $7.00</td><td>× $7.00</td><td>× $7.00</td></tr>
+                    <tr><td><strong>Variable MOH</strong></td><td><strong>$84,000</strong></td><td><strong>$71,400</strong></td><td><strong>$73,500</strong></td><td><strong>$79,100</strong></td></tr>
+                    <tr><td>+ Fixed MOH</td><td>88,000</td><td>88,000</td><td>88,000</td><td>88,000</td></tr>
+                    <tr><td><strong>Total MOH</strong></td><td><strong>$172,000</strong></td><td><strong>$159,400</strong></td><td><strong>$161,500</strong></td><td><strong>$167,100</strong></td></tr>
+                    <tr><td>− Depreciation</td><td>(22,000)</td><td>(22,000)</td><td>(22,000)</td><td>(22,000)</td></tr>
+                    <tr><td><strong>Cash disbursements</strong></td><td><strong>$150,000</strong></td><td><strong>$137,400</strong></td><td><strong>$139,500</strong></td><td><strong>$145,100</strong></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- ===================== SELLING & ADMIN ===================== -->
+        <div id="selling" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">💼</span> Selling &amp; Administrative Expense Budget</h2>
+                <div class="formula-box">
+                    Budgeted unit sales × Variable S&amp;A per unit = Variable S&amp;A<br>
+                    + Fixed S&amp;A expenses (itemized) = Total S&amp;A<br>
+                    − Depreciation (noncash)<br>
+                    <strong>= Cash disbursements for S&amp;A</strong>
+                </div>
+
+                <h3>Example: Weller Company (Q11)</h3>
+                <p>Variable S&amp;A: $1.70/unit | Fixed/qtr: Advertising $11,000, Exec salaries $38,000, Depreciation $17,000 | Insurance $4,000 (Q1 &amp; Q3 only) | Property taxes $8,200 (Q2 only)</p>
+                <table class="comparison-table">
+                    <tr><th></th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Year</th></tr>
+                    <tr><td>Budgeted unit sales</td><td>18,000</td><td>22,000</td><td>17,000</td><td>16,000</td><td>73,000</td></tr>
+                    <tr><td>× Variable rate</td><td>× $1.70</td><td>× $1.70</td><td>× $1.70</td><td>× $1.70</td><td>× $1.70</td></tr>
+                    <tr><td><strong>Variable S&amp;A</strong></td><td><strong>$30,600</strong></td><td><strong>$37,400</strong></td><td><strong>$28,900</strong></td><td><strong>$27,200</strong></td><td><strong>$124,100</strong></td></tr>
+                    <tr><td>Advertising</td><td>11,000</td><td>11,000</td><td>11,000</td><td>11,000</td><td>44,000</td></tr>
+                    <tr><td>Executive salaries</td><td>38,000</td><td>38,000</td><td>38,000</td><td>38,000</td><td>152,000</td></tr>
+                    <tr><td>Insurance</td><td>4,000</td><td>0</td><td>4,000</td><td>0</td><td>8,000</td></tr>
+                    <tr><td>Property taxes</td><td>0</td><td>8,200</td><td>0</td><td>0</td><td>8,200</td></tr>
+                    <tr><td>Depreciation</td><td>17,000</td><td>17,000</td><td>17,000</td><td>17,000</td><td>68,000</td></tr>
+                    <tr><td><strong>Total S&amp;A</strong></td><td><strong>$100,600</strong></td><td><strong>$111,600</strong></td><td><strong>$98,900</strong></td><td><strong>$93,200</strong></td><td><strong>$404,300</strong></td></tr>
+                    <tr><td>− Depreciation</td><td>(17,000)</td><td>(17,000)</td><td>(17,000)</td><td>(17,000)</td><td>(68,000)</td></tr>
+                    <tr><td><strong>Cash disbursements</strong></td><td><strong>$83,600</strong></td><td><strong>$94,600</strong></td><td><strong>$81,900</strong></td><td><strong>$76,200</strong></td><td><strong>$336,300</strong></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- ===================== CASH COLLECTIONS ===================== -->
+        <div id="cash-collections" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">💵</span> Schedule of Expected Cash Collections</h2>
+                <div class="key-point">
+                    <strong>⚠️ Key Concept:</strong> Sales on credit aren't collected immediately. Track WHEN cash comes in based on the collection pattern.
+                </div>
+
+                <h3>Example: Pitkin Corporation (Q3)</h3>
+                <p>70% collected in month of sale | 20% month following | 10% second month following</p>
+                <div class="formula-box">
+                    <strong>Cash collected in April:</strong><br>
+                    April sales: $250,000 × 70% = $175,000<br>
+                    March sales: $350,000 × 20% = $70,000<br>
+                    February sales: $300,000 × 10% = $30,000<br>
+                    <strong>Total April collections = $275,000 ✅</strong>
+                </div>
+
+                <h3>Example: Silver Company (Q6)</h3>
+                <p>25% month of sale | 60% month following | 15% second month following</p>
+                <table class="comparison-table">
+                    <tr><th></th><th>April</th><th>May</th><th>June</th><th>Total</th></tr>
+                    <tr><td>Feb sales ($380K) — 15%</td><td>$57,000</td><td></td><td></td><td>$57,000</td></tr>
+                    <tr><td>Mar sales ($410K) — 60%</td><td>246,000</td><td></td><td></td><td>246,000</td></tr>
+                    <tr><td>Mar sales ($410K) — 15%</td><td></td><td>$61,500</td><td></td><td>61,500</td></tr>
+                    <tr><td>Apr sales ($450K) — 25%</td><td>112,500</td><td></td><td></td><td>112,500</td></tr>
+                    <tr><td>Apr sales ($450K) — 60%</td><td></td><td>270,000</td><td></td><td>270,000</td></tr>
+                    <tr><td>Apr sales ($450K) — 15%</td><td></td><td></td><td>$67,500</td><td>67,500</td></tr>
+                    <tr><td>May sales ($650K) — 25%</td><td></td><td>162,500</td><td></td><td>162,500</td></tr>
+                    <tr><td>May sales ($650K) — 60%</td><td></td><td></td><td>390,000</td><td>390,000</td></tr>
+                    <tr><td>Jun sales ($250K) — 25%</td><td></td><td></td><td>62,500</td><td>62,500</td></tr>
+                    <tr><td><strong>Total collections</strong></td><td><strong>$415,500</strong></td><td><strong>$494,000</strong></td><td><strong>$520,000</strong></td><td><strong>$1,429,500</strong></td></tr>
+                </table>
+
+                <div class="life-example">
+                    <h4>📝 A/R Balance at June 30:</h4>
+                    <p>May sales: 15% uncollected = $650,000 × 15% = $97,500<br>
+                    June sales: 75% uncollected = $250,000 × 75% = $187,500<br>
+                    <strong>A/R Balance June 30 = $285,000</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== CASH BUDGET ===================== -->
+        <div id="cash-budget" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">🏦</span> Cash Budget</h2>
+                <div class="formula-box">
+                    Beginning cash balance<br>
+                    + Cash receipts (collections)<br>
+                    = Total cash available<br>
+                    − Cash disbursements<br>
+                    = Excess (deficiency) of cash<br><br>
+                    <strong>FINANCING:</strong><br>
+                    + Borrowings − Repayments − Interest<br>
+                    <strong>= Ending cash balance</strong>
+                </div>
+
+                <div class="key-point">
+                    <strong>⚠️ Key Rules for Borrowing:</strong><br>
+                    1. Must maintain a MINIMUM cash balance<br>
+                    2. Borrow at BEGINNING of quarter<br>
+                    3. Repay at END of quarter<br>
+                    4. Interest = Amount × Rate × Time
+                </div>
+
+                <h3>Example: Garden Depot (Q12)</h3>
+                <p>Beginning cash: $20,000 | Min required: $10,000 | Quarterly interest: 3%</p>
+                <table class="comparison-table">
+                    <tr><th></th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th></tr>
+                    <tr><td>Beginning balance</td><td>$20,000</td><td>$10,000</td><td>$10,000</td><td>$10,000</td></tr>
+                    <tr><td>+ Receipts</td><td>350,000</td><td>470,000</td><td>400,000</td><td>420,000</td></tr>
+                    <tr><td><strong>Total available</strong></td><td><strong>$370,000</strong></td><td><strong>$480,000</strong></td><td><strong>$410,000</strong></td><td><strong>$430,000</strong></td></tr>
+                    <tr><td>− Disbursements</td><td>(393,000)</td><td>(363,000)</td><td>(353,000)</td><td>(373,000)</td></tr>
+                    <tr><td><strong>Excess (deficiency)</strong></td><td><strong>($23,000)</strong></td><td><strong>$117,000</strong></td><td><strong>$57,000</strong></td><td><strong>$57,000</strong></td></tr>
+                    <tr><td style="color:#00d4ff">Borrowings</td><td>33,000</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td style="color:#00d4ff">Repayments</td><td>0</td><td>(33,000)</td><td>0</td><td>0</td></tr>
+                    <tr><td style="color:#00d4ff">Interest</td><td>0</td><td>(990)</td><td>0</td><td>0</td></tr>
+                    <tr><td><strong>Ending balance</strong></td><td><strong>$10,000</strong></td><td><strong>$83,010</strong></td><td><strong>$57,000</strong></td><td><strong>$57,000</strong></td></tr>
+                </table>
+                <div class="life-example">
+                    <h4>📝 Notes:</h4>
+                    <p>Q1 borrowing: Need ($23,000) → $10,000 min = $33,000 needed<br>
+                    Interest: $33,000 × 3% × 1 quarter = $990</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== INCOME STATEMENT ===================== -->
+        <div id="income" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">📋</span> Budgeted Income Statement</h2>
+                <div class="formula-box">
+                    Sales<br>
+                    − Cost of goods sold<br>
+                    = <strong>Gross margin</strong><br><br>
+                    − Selling &amp; administrative expenses<br>
+                    = <strong>Net operating income</strong><br><br>
+                    − Interest expense<br>
+                    = <strong>Net income</strong>
+                </div>
+
+                <h3>Example: Gig Harbor Boating (Q13)</h3>
+                <p>760 units | $2,100 selling price | $1,690 cost/unit | $90 variable S&amp;A/unit | $200,000 fixed S&amp;A | $26,000 interest</p>
+                <table class="comparison-table">
+                    <tr><th>Gig Harbor Boating</th><th></th></tr>
+                    <tr><td>Sales (760 × $2,100)</td><td>$1,596,000</td></tr>
+                    <tr><td>Cost of goods sold (760 × $1,690)</td><td>(1,284,400)</td></tr>
+                    <tr><td><strong>Gross margin</strong></td><td><strong>$311,600</strong></td></tr>
+                    <tr><td>Variable S&amp;A (760 × $90)</td><td>$68,400</td></tr>
+                    <tr><td>Fixed S&amp;A</td><td>200,000</td></tr>
+                    <tr><td>Total S&amp;A expenses</td><td>(268,400)</td></tr>
+                    <tr><td><strong>Net operating income</strong></td><td><strong>$43,200</strong></td></tr>
+                    <tr><td>Interest expense</td><td>(26,000)</td></tr>
+                    <tr><td><strong>Net income</strong></td><td><strong>$17,200</strong></td></tr>
+                </table>
+
+                <h3 style="margin-top:30px">Retained Earnings (Q5)</h3>
+                <div class="formula-box">
+                    Beginning retained earnings<br>
+                    + Net income<br>
+                    − Dividends<br>
+                    <strong>= Ending retained earnings</strong>
+                </div>
+                <div class="key-point">
+                    <strong>⚠️ Watch out!</strong> Net income is ADDED. Dividends are SUBTRACTED. Never the opposite!
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== BALANCE SHEET ===================== -->
+        <div id="balance" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">⚖️</span> Budgeted Balance Sheet</h2>
+                <div class="formula-box">
+                    <strong>ASSETS</strong> = <strong>LIABILITIES</strong> + <strong>STOCKHOLDERS' EQUITY</strong>
+                </div>
+
+                <h3>Example: Mecca Copy (Q14)</h3>
+                <p>Beginning RE: $27,000 | Net income: $16,600 | Dividends: $3,100</p>
+
+                <div class="life-example">
+                    <h4>Step 1: Calculate Retained Earnings</h4>
+                    <p>$27,000 + $16,600 − $3,100 = <strong>$40,500</strong></p>
+                </div>
+                <div class="life-example">
+                    <h4>Step 2: Calculate Cash (plug figure)</h4>
+                    <p>Total L&amp;SE = $2,800 + $5,000 + $40,500 = <strong>$48,300</strong><br>
+                    P&amp;E net = $39,000 − $15,800 = $23,200<br>
+                    Other current assets = $9,100 + $2,600 = $11,700<br>
+                    Cash = $48,300 − $23,200 − $11,700 = <strong>$13,400</strong></p>
+                </div>
+
+                <table class="comparison-table">
+                    <tr><th colspan="2">ASSETS</th></tr>
+                    <tr><td>Cash</td><td>$13,400</td></tr>
+                    <tr><td>Accounts receivable</td><td>9,100</td></tr>
+                    <tr><td>Supplies inventory</td><td>2,600</td></tr>
+                    <tr><td><strong>Total current assets</strong></td><td><strong>$25,100</strong></td></tr>
+                    <tr><td>Equipment</td><td>$39,000</td></tr>
+                    <tr><td>Less: Accum. depreciation</td><td>(15,800)</td></tr>
+                    <tr><td><strong>P&amp;E, net</strong></td><td><strong>$23,200</strong></td></tr>
+                    <tr><td><strong>Total assets</strong></td><td><strong>$48,300</strong></td></tr>
+                    <tr><th colspan="2">LIABILITIES &amp; EQUITY</th></tr>
+                    <tr><td>Accounts payable</td><td>$2,800</td></tr>
+                    <tr><td>Common stock</td><td>$5,000</td></tr>
+                    <tr><td>Retained earnings</td><td>40,500</td></tr>
+                    <tr><td><strong>Total L &amp; SE</strong></td><td><strong>$48,300</strong></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- ===================== QUICK REFERENCE ===================== -->
+        <div id="formulas" class="module-content">
+            <div class="card">
+                <h2><span class="emoji-icon">📝</span> Quick Reference: Key Formulas</h2>
+                <div class="cheat-sheet">
+                    <div class="cheat-item">
+                        <h4>🏭 Production</h4>
+                        <p>Sales + Desired Ending FG − Beginning FG = Production</p>
+                    </div>
+                    <div class="cheat-item">
+                        <h4>📦 Direct Materials</h4>
+                        <p>Production Needs + Desired Ending RM − Beginning RM = Purchases</p>
+                    </div>
+                    <div class="cheat-item">
+                        <h4>👷 Direct Labor</h4>
+                        <p>Units × Hours/Unit × Rate/Hour = Total DL Cost</p>
+                    </div>
+                    <div class="cheat-item">
+                        <h4>⚙️ MOH Cash</h4>
+                        <p>Total MOH − Depreciation = Cash Disbursements</p>
+                    </div>
+                    <div class="cheat-item">
+                        <h4>💼 S&amp;A Cash</h4>
+                        <p>Total S&amp;A − Depreciation = Cash Disbursements</p>
+                    </div>
+                    <div class="cheat-item">
+                        <h4>💵 Cash Collections</h4>
+                        <p>Track % collected by month from each month's sales</p>
+                    </div>
+                    <div class="cheat-item">
+                        <h4>🏦 Cash Budget</h4>
+                        <p>Begin + Receipts − Disbursements ± Financing = Ending</p>
+                    </div>
+                    <div class="cheat-item">
+                        <h4>📋 Retained Earnings</h4>
+                        <p>Beginning RE + Net Income − Dividends = Ending RE</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><span class="emoji-icon">🚫</span> Common Mistakes to Avoid</h2>
+                <ol>
+                    <li><strong>Production Budget:</strong> Don't forget to ADD ending inventory and SUBTRACT beginning inventory</li>
+                    <li><strong>Materials Budget:</strong> Calculate ending inventory based on PRODUCTION needs, not sales</li>
+                    <li><strong>Cash Collections:</strong> Count the correct months — "month following sale" means one month later</li>
+                    <li><strong>Cash Budget:</strong> Borrow ENOUGH to meet minimum balance, not just to get to zero</li>
+                    <li><strong>Interest:</strong> Calculate based on time borrowed (Q1→Q2 = 1 quarter)</li>
+                    <li><strong>Retained Earnings:</strong> Net income is ADDED, dividends are SUBTRACTED (never the opposite)</li>
+                    <li><strong>Balance Sheet:</strong> Assets must equal Liabilities + Stockholders' Equity</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h2><span class="emoji-icon">🛁</span> Study Tip: Inventory Flow</h2>
+                <div class="formula-box">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ What goes IN<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[=============]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp; TUB &nbsp;&nbsp;&nbsp;&nbsp;]&nbsp;&nbsp;← What you HAVE<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[=============]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ What goes OUT
+                </div>
+                <p><strong>Formula:</strong> Beginning + Additions − Usage = Ending</p>
+                <p><strong>Rearranged:</strong> Additions = Usage + Ending − Beginning</p>
+                <div class="life-example">
+                    <h4>This logic applies to:</h4>
+                    <p>• Finished goods (production in, sales out)<br>
+                    • Raw materials (purchases in, production out)<br>
+                    • Cash (receipts in, disbursements out)</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
